@@ -6,7 +6,8 @@ const sampleProjects = [
         client: "TechStore Inc",
         hoursWorked: 45,
         hourlyRate: 50,
-        status: "active"
+        status: "active",
+        deadline: "2024-08-15"
     },
     {
         id: 2,
@@ -14,7 +15,8 @@ const sampleProjects = [
         client: "StartupXYZ",
         hoursWorked: 8,
         hourlyRate: 60,
-        status: "completed"
+        status: "completed",
+        deadline: "2024-06-30"
     },
     {
         id: 3,
@@ -22,7 +24,8 @@ const sampleProjects = [
         client: "FinanceHub",
         hoursWorked: 120,
         hourlyRate: 75,
-        status: "active"
+        status: "active",
+        deadline: "2024-12-01"
     }
 ];
 
@@ -36,6 +39,7 @@ function createProjectCard(project) {
             <p><strong>Client:</strong> ${project.client}</p>
             <p><strong>Hours Worked:</strong> ${project.hoursWorked}h</p>
             <p><strong>Rate:</strong> $${project.hourlyRate}/hr</p>
+            <p><strong>Deadline: </strong>${project.deadline}</p>
             <p><strong>Total Earned:</strong> $${totalEarned}</p>
             <span class="status-badge status-${project.status}">
                 ${project.status.toUpperCase()}
