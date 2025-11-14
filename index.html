@@ -7,33 +7,33 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- navbar -->
-    <div class="navbar">
+    <!-- NAVIGATION BAR -->
+    <nav class="navbar">
         <div class="nav-container">
-            <h1 class="logo">TaskFlow</h1>
+            <h1 class="logo">📊 TaskFlow</h1>
             <ul class="nav-menu">
-                <li><a href="#projectss">Projects</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="#clients">Clients</a></li>
-                <li><a href="#login">Login</a></li>
+                <li><a href="#login" class="btn-login" style="color:#667eea;">Login</a></li>
             </ul>
         </div>
-    </div>
+    </nav>
 
-    <!-- hero section -->
+    <!-- HERO SECTION -->
     <section class="hero">
         <div class="hero-content">
             <h2>Manage Your Freelance Business Like a Pro</h2>
-            <p>Track pojects,manage clients and never miss a deadline</p>
-            <button class="btn-primary" id="getStartBtn">Get Started Free</button>
+            <p>Track projects, manage clients, and never miss a deadline</p>
+            <button class="btn-primary" id="getStartedBtn">Get Started Free</button>
         </div>
     </section>
 
-    <!-- PROJECT SECTION -->
-    <section class="project-section" id="projects">
+    <!-- PROJECTS SECTION -->
+    <section class="projects-section" id="projects">
         <div class="container">
             <h2>Active Projects</h2>
             <div class="projects-grid" id="projectsGrid">
-                <!-- Project cards will be dynamically inserted here -->
+                <!-- JavaScript will add projects here -->
             </div>
             <button class="btn-add" id="addProjectBtn">+ Add New Project</button>
         </div>
@@ -48,7 +48,7 @@
             </div>
             <div class="stat-card">
                 <h3>12</h3>
-                <p>Happy clients</p>
+                <p>Happy Clients</p>
             </div>
             <div class="stat-card">
                 <h3>$8,500</h3>
@@ -56,5 +56,7 @@
             </div>
         </div>
     </section>
+
+    <script src="app.js"></script>
 </body>
 </html>
