@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskFlow - Freelance Project Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- navbar -->
+    <div class="navbar">
+        <div class="nav-container">
+            <h1 class="logo">TaskFlow</h1>
+            <ul class="nav-menu">
+                <li><a href="#projectss">Projects</a></li>
+                <li><a href="#clients">Clients</a></li>
+                <li><a href="#login">Login</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- hero section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Manage Your Freelance Business Like a Pro</h2>
+            <p>Track pojects,manage clients and never miss a deadline</p>
+            <button class="btn-primary" id="getStartBtn">Get Started Free</button>
+        </div>
+    </section>
+
+    <!-- PROJECT SECTION -->
+    <section class="project-section" id="projects">
+        <div class="container">
+            <h2>Active Projects</h2>
+            <div class="projects-grid" id="projectsGrid">
+                <!-- Project cards will be dynamically inserted here -->
+            </div>
+            <button class="btn-add" id="addProjectBtn">+ Add New Project</button>
+        </div>
+    </section>
+
+    <!-- STATS SECTION -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stat-card">
+                <h3>5</h3>
+                <p>Active Projects</p>
+            </div>
+            <div class="stat-card">
+                <h3>12</h3>
+                <p>Happy clients</p>
+            </div>
+            <div class="stat-card">
+                <h3>$8,500</h3>
+                <p>This Month</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
