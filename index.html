@@ -60,7 +60,88 @@
             </div>
         </div>
     </section>
+    <!-- ADD PROJECT MODAL -->
+    <div class="modal" id="projectModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Add New Project</h2>
+                <span class="close-btn" id="closeModal">&times;</span>
+            </div>
+            
+            <form id="projectForm">
+                <div class="form-group">
+                    <label for="projectName">Project Name *</label>
+                    <input 
+                        type="text" 
+                        id="projectName" 
+                        name="projectName" 
+                        placeholder="e.g., Website Redesign"
+                        required
+                    >
+                </div>
 
+                <div class="form-group">
+                    <label for="clientName">Client Name *</label>
+                    <input 
+                        type="text" 
+                        id="clientName" 
+                        name="clientName" 
+                        placeholder="e.g., Acme Corp"
+                        required
+                    >
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="hourlyRate">Hourly Rate ($) *</label>
+                        <input 
+                            type="number" 
+                            id="hourlyRate" 
+                            name="hourlyRate" 
+                            value="50"
+                            min="0"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="hoursWorked">Hours Worked</label>
+                        <input 
+                            type="number" 
+                            id="hoursWorked" 
+                            name="hoursWorked" 
+                            value="0"
+                            min="0"
+                        >
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="status">Status</label>
+                    <select id="status" name="status">
+                        <option value="active">Active</option>
+                        <option value="completed">Completed</option>
+                        <option value="on-hold">On Hold</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="description">Description</label>
+                    <textarea 
+                        id="description" 
+                        name="description" 
+                        rows="3"
+                        placeholder="Brief project description..."
+                    ></textarea>
+                </div>
+
+                <div class="form-actions">
+                    <button type="button" class="btn-cancel" id="cancelBtn">Cancel</button>
+                    <button type="submit" class="btn-submit">Add Project</button>
+                </div>
+            </form>
+        </div>
+    </div>
     <script src="app.js"></script>
 </body>
 </html>
